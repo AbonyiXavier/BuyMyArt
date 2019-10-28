@@ -1,0 +1,26 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h6 class="display-3 mt-3 pt-5">
+                <strong>Title</strong><em>'In My Country'</em>
+            </h6>
+            <p class="lead"> <em>Art By Xavier</em></p>
+            <form action="/pay" method="POST">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="{{stripePublishableKey}}" data-amount="3500" data-name="BuyMyArt"
+                    data-description="BuyMyArt" data-image="/img/marketplace.png" data-locale="auto">
+                    </script>
+                <script>
+                    // Hide default stripe button
+                    document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-dark text-white">
+                    Purchase for $35
+                </button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img src="./img/Art 1.jpg" alt="art 1" class="img-fluid" width="400" height="400">
+        </div>
+    </div>
+</section>
