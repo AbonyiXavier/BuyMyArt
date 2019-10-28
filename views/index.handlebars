@@ -7,8 +7,8 @@
             <p class="lead"> <em>Art By Xavier</em></p>
             <form action="/pay" method="POST">
                 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="{{stripePublishableKey}}" data-amount="3500" data-name="BuyMyArt"
-                    data-description="BuyMyArt" data-image="/img/marketplace.png" data-locale="auto">
+                    Stripe.setPublishableKey('stripePublishableKey'); data-key="{{stripePublishableKey}}"
+                    data-amount="3500" data-name="BuyMyArt" data-image="/img/marketplace.png" data-locale="auto">
                     </script>
                 <script>
                     // Hide default stripe button
